@@ -22,6 +22,6 @@ then
     exit 1
 fi
 num_files=$(find $1 -type f -print | wc -l)
-num_lines=$(grep -rl $2 $1 | wc -l)
+num_lines=$(grep -r $2 $1 | wc -l)
 
 echo "The number of files are $num_files and the number of matching lines are $num_lines"
